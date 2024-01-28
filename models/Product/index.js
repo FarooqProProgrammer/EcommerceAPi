@@ -7,7 +7,8 @@ const productSchema = new mongoose.Schema(
         description: String,
         category:String,
         imageUrl: String
-    }
+    },
+    { timestamps: true }
 );
 
 const Product = mongoose.model('Product', productSchema);
