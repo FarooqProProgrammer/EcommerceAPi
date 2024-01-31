@@ -17,7 +17,7 @@ const upload = multer({ storage: storage });
 
 
 router.post('/products', addproduct);
-router.delete('/products/:id', verifyToken, deleteProduct);
+router.delete('/products/:id',  deleteProduct);
 router.get('/productslist',getProducts);
 router.get('/category/:category',Category);
 router.put('/products/:id',updateProduct);
