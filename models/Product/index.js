@@ -24,31 +24,24 @@ const productSchema = new mongoose.Schema(
         },
         Size: {
             type: String,
-            required: true,
         },
         Color: {
             type: String,
-            required: true,
         },
         Tags: {
             type: String,
-            required: true,
         },
         Brand: {
             type: String,
-            required: true,
         },
         AdditionalInformation: {
             type: String,
-            required: true,
         },
         SizeGuide: {
             type: String,
-            required: true,
         },
         Review: {
             type: String,
-            required: true,
         },
     },
     { timestamps: true }

@@ -2,13 +2,12 @@ var Product = require('../../models/Product/index')
 
 
 const addproduct = async (req, res) => {
-    const { name, price, description, category } = req.body;
+    const { name, price, description, category,imageUrl } = req.body;
     console.log(name)
     console.log(price)
     console.log(description)
 
-    const imageUrl = req.file ? req.file.path : '';
-    console.log(imageUrl)
+  
 
 
     try {

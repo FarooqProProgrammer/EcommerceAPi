@@ -9,7 +9,9 @@ class userAuth {
     }
     // ====================== Register ======================
     static async userRegister(req, res) {
-        const { Name, Password, Email } = req.body
+        const { Name, Password, Email } = req.body.data;
+
+        console.log(req.body);
 
         var salt = bcrypt.genSaltSync(10);
         var hashPassword = bcrypt.hashSync(Password, salt);
