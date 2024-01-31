@@ -27,7 +27,7 @@ class userAuth {
 
     // ==================== Login =============================
     static async userLogin(req, res) {
-        const { Email, Password } = req.body;
+        const { Email, Password } = req.body.data;
 
         console.log(Email)
         console.log(Password)
@@ -55,9 +55,6 @@ class userAuth {
         const token = await user.generateToken();
         res.header("x-auth", token);
         res.send({ message: "user Found", data: user, token: token })
-
-
-
     }
 
 
